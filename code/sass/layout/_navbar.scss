@@ -1,0 +1,36 @@
+.header-menu {
+    ul {
+        display: flex;
+        list-style: none;
+        gap: 30px;
+        margin-right: 40px;
+
+        a {
+            text-decoration: none;
+            font-size: 14px;
+            color: $white;
+            font-weight: 200;
+        }
+        .header-main-link {
+            font-weight: 400;
+        }
+
+        .header-main-link::before {
+            content: "";
+            width: 2%;
+            height: 2px;
+            background-color: $pink;
+            position: absolute;
+            top: 61px;
+            bottom: 20px;
+            right: 480px;
+            z-index: 3;
+          
+        }
+
+        a:hover {
+            color: $pink;
+        }
+    }
+
+}

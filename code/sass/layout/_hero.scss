@@ -1,9 +1,18 @@
 .hero {
+ 
+    img {
+        position: absolute;
+    }
+    &-image {
+        top: 110px;
+        left: 710px;
+        width: 45%;
+    }
+
     &-title {
         font-size: 57px;
         color: $white;
         font-family: $hero-font;
-        max-width: 80%;
         line-height: 70px;
     }
     &-text {

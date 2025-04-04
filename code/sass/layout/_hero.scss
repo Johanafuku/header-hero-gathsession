@@ -1,17 +1,20 @@
 .hero {
+    display: flex;
+    gap: 20px;
 
     &-title {
         font-size: 57px;
         color: $white;
         font-family: $hero-font;
         line-height: 70px;
+        max-width: 60%;
     }
     &-text {
         margin-top: 19px;
         font-size: 16px;
         color: $white;
         font-weight: 100;
-        max-width: 67%;
+        max-width: 47%;
     }
 
     &-buttons {
@@ -23,6 +26,7 @@
         color: $white;
      }
 
+
     .hero-link {
         padding-left: 30px;
         display: flex;
@@ -32,5 +36,16 @@
             position: relative;
         };
     }
+    }
+
+    .hero-image {
+        position: absolute;
+        max-width: 46%;
+        left: 700px;
+        top: 100px;
+
+        @include breakpoint(desktopxl) {
+            left: 930px;
+        }
     }
 }

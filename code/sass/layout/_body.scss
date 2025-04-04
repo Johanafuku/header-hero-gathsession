@@ -6,9 +6,13 @@ body {
     overflow-x: hidden;
     background-color: $background-color-principal;
     font-family: $primary-font;
-    /*background-image: url("img/hero-image.svg");
+    background-image: url("img/background-image.png");
     background-repeat:no-repeat;
-    background-position: 720px 110px;
-    background-size: 45%;*/
+    background-position: 100% 98%;  /*720px 110px;*/
+    background-size: 45%;
+    background-attachment: local;
     
+    @include breakpoint(desktopxl) {
+        background-position: 100% 120px;
+    }
 } 
